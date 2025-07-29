@@ -1,4 +1,4 @@
-const socket = io('https://your-server-domain.com');
+const socket = io('http://seungchan.kr:1122');
 const queueEl = document.getElementById('queue');
 const transcodingEl = document.getElementById('transcoding');
 const verifyingEl = document.getElementById('verifying');
