@@ -8,7 +8,7 @@ const submitBtn = document.getElementById('submitBtn');
 submitBtn.addEventListener('click', async () => {
     const input = document.getElementById('uploadInput').value.trim();
     if (!input) return;
-    await fetch('/upload', {
+    await fetch('https://seungchan.kr:1122/upload', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ videos: input.split(',') }),
