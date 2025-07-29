@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>비디오 업로드 UI</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>영상 업로드</h2>
+            <input id="uploadInput" placeholder="ex: 1:2,2:1" />
+            <button id="submitBtn">전송</button>
+
+            <div class="status-section">
+                <div class="column">
+                    <h3>Queue</h3>
+                    <div id="queue"></div>
+                </div>
+                <div class="column">
+                    <h3>Transcoding</h3>
+                    <div id="transcoding"></div>
+                </div>
+                <div class="column">
+                    <h3>Verifying</h3>
+                    <div id="verifying"></div>
+                </div>
+            </div>
+
+            <div class="log-section">
+                <h3>Log</h3>
+                <pre id="log"></pre>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
